@@ -1,0 +1,12 @@
+/*Clase para el div*/
+div.highlight {
+    color: blue;
+}
+/*Clase para el span*/
+span.highlight {
+    color: red;
+}
+/*Clase para el uppercase*/
+.uppercase {
+    text-transform: uppercase;
+}
