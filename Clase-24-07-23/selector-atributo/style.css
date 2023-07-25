@@ -1,0 +1,48 @@
+/* Elemento p con un atributo "role" */
+p[role] {
+    color: blue;
+}
+
+/* Elemento p con un class que coincida con "ejemplo2" */
+p[class="ejemplo2"] {
+    color: green;
+}
+
+/* Elemento p con un class que cointiene la pálabra "ejemplo3" */
+p[class~="ejemplo3"] {
+    color: purple;
+}
+
+/* Elemento p con un class que cointiene la pálabra "ejemplo" seguido de un guión */
+p[class|="ejemplo"] {
+    color: skyblue;
+}
+
+/* Elemento p con un class que comienza con "#" */
+p[class^="#"] {
+    color: darkgrey;
+}
+
+/* Elemento p con un class que termine en "6" */
+p[class$="6"] {
+    color: red;
+}
+
+/* Elemento p con un class que cointiene "emmmp" en cualquier parte del nombre */
+p[class*="emmmp"] {
+    color: orange;
+}
+
+/* Elemento p con un class que coincida con "ejemplo8" independientemente de las mayúsculas */
+p[class$="lo8" i] {
+    color: pink;
+}
+
+.ejemplo1{
+    font-size: 10px;
+    color: antiquewhite;
+}
+
+#rosa{
+    color: pink;
+}
