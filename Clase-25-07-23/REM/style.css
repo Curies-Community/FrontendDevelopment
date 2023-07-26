@@ -1,0 +1,15 @@
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px; /*1rem = 10px*/
+}
+
+h1{
+    font-size: 2rem;
+}
+
+span{
+    font-size: 2rem; 
+}

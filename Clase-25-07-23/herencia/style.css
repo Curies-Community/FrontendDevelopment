@@ -1,0 +1,15 @@
+.color {
+    color: green;
+}
+
+.color-inherit{
+    color: inherit;
+}
+
+.color-initial{
+    color: initial;
+}
+
+.color-unset{
+    color: unset;
+}

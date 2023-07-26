@@ -1,0 +1,11 @@
+.padre > .hijo{
+    color: green;
+}
+
+h1 + h2{
+    color: red;
+}
+
+h1 ~ p {
+    color: blue;
+}
