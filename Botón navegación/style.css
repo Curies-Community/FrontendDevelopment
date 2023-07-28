@@ -1,0 +1,34 @@
+nav a {
+    position: relative;
+    font-size: 14px;
+    font-family: 'Space Grotesk', sans-serif;
+    text-decoration: none;
+    color: black;
+    margin: 10px;  
+}
+
+nav a::after { 
+    position: absolute;
+    
+    /*Crea la linea que aparece abajo*/
+    content: ''; 
+    width: 0;
+    height: 1.5px;
+    background: gray;
+
+    /*Posiciona la linea en el centro de <a>*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /*Posiciona la linea abajo de <a>*/
+    margin-top: 12px;
+    
+    /*Es el tiempo de la animación*/
+    transition: 0.5s;
+}
+
+/*Se activa la animación*/
+nav a:hover::after { 
+    width: 100%;
+}
