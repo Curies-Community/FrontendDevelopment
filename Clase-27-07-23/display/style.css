@@ -1,0 +1,54 @@
+/* h1, h2, p{
+    display: inline;
+}
+
+a {
+    display: block;
+} */
+
+/*span{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-block;
+}*/
+
+.caja{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: aquamarine;
+    display: inline-block;
+}
+
+p{
+    font-size: 60px;
+}
+
+.static{
+    position: static;
+}
+
+.fixed{
+    margin-top: 30px;
+    position: fixed;
+}
+
+.relative{
+    top: 500px;
+    position: relative;
+}
+
+.absolute{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.sticky{
+    position: sticky;
+    top: 10px;
+}
