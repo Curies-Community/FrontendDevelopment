@@ -1,0 +1,313 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px; /*1rem = 10px*/
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*** Globales ***/
+.contenedor {
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-fondo {
+    background-color: #212121;
+    position: sticky;
+    top: 0rem;
+}
+
+.boton {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.7rem;
+    background-color: white;
+}
+
+.boton:hover {
+    color: white;
+    background-color: black;
+}
+
+.position{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/***************************** Index ***************************/
+/*** Header ***/
+/* Imagen de fondo */
+.header{
+    background-image: url(images/fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.contenedor-header{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 60%);
+    height: 100%;
+    width: 100%;
+}
+
+/* Navegación */
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion nav a {
+    margin-left: 2rem;
+    color: white;
+}
+
+.navegacion nav a:hover{
+    text-decoration: underline;
+}
+
+/* Titulo y subtitulo */
+.titulo-header{
+    color: white;
+    text-align: center;
+    padding-top: 20rem;
+}
+
+
+
+/*** Footer ***/
+.footer {
+    background-color: #212121;
+    margin-top: auto;
+}
+
+.contenedor-footer {
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-footer p{
+    margin: 0;
+    color: white;
+}
+
+.r-sociales a{
+    margin-right: 2rem;
+}
+
+
+/***************************** Sobre mi ***************************/
+/*** Conoceme ***/
+.conoceme {
+    margin-top: 5rem;
+}
+.contenedor-con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.foto-con {
+    flex-basis: 35%;
+}
+
+.foto-con img {
+    width: 80%;
+    margin-top: 1rem;
+}
+
+.descrip-con {
+    flex-basis: 65%;
+}
+
+.descrip-con h3 {
+    text-align: left;
+    margin-top: 4rem;
+}
+
+/*** Conocimientos ***/
+.conocimientos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 6rem;
+    margin: 8rem 0 5rem;
+}
+
+.conocimientos section {
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding: 2rem 4rem;
+}
+
+.conocimientos section svg {
+    display: flex;
+    margin: auto;
+}
+
+/*** Cursos y certificaciones ***/
+.cursos {
+    margin: 8rem 0 5rem;
+}
+
+.contenedor-cursos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+    margin-top: 2rem;
+}
+
+.contenedor-cursos div {
+    padding: 2rem 4rem 0;
+    text-align: center;
+}
+
+.cursos-imagen {
+    display: flex;
+    margin: auto;
+    width: 5rem;
+    height: 5rem;
+}
+
+.cursos a button{
+    display: flex;
+    margin: 2rem auto 0;
+}
+
+/***************************** Proyectos ***************************/
+.proyectos {
+    margin: 5rem auto;
+}
+
+.contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+    margin-top: 2rem;
+}
+
+.proyecto {
+    margin: 2rem 0;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+
+.proyecto1{
+    background-image: url(images/proyecto1.jpg);
+}
+
+.proyecto2{
+    background-image: url(images/proyecto2.jpg);
+}
+
+.proyecto3{
+    background-image: url(images/proyecto3.jpg);
+}
+
+.info {
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 60%);
+    border-radius: 1rem;
+}
+
+.info p{
+    margin-top: 0;
+}
+
+.proyectos a button{
+    display: flex;
+    margin: 2rem auto 0;
+}
+
+/***************************** Contacto ***************************/
+.contacto{
+    margin: 5rem 0;
+}
+
+.contacto p{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+
+/*** Formulario ***/
+.formulario {
+    width: min(60rem, 100%);
+    margin: 3rem auto 0;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.formulario fieldset{
+    border: none;
+}
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    column-gap: 2rem;
+}
+
+.grid:nth-child(3),
+.grid:nth-child(4) {
+    grid-column: 1/3;
+}
+
+.grid{
+    margin-top: 1rem;
+}
+
+.grid label {
+    margin-top: 0.5rem;
+    display: block;
+}
+
+.grid input, .grid textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.8rem 0;
+    border-radius: 0.6rem;
+    border-color: black;
+    border-width: 1px;
+}
+
+.form-boton {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1.2rem;
+    margin-bottom: 2rem;
+}
