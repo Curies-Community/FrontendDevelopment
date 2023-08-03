@@ -1,0 +1,13 @@
+body{
+    background-color: tomato;
+}
+.color-background{
+    background-color: yellow;
+    padding: 20px;
+}
+
+.texto3{
+    font-size: 20px;
+    color: crimson;
+    text-align: center;
+}

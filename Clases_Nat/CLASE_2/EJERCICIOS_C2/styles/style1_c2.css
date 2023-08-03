@@ -1,0 +1,11 @@
+body{
+    background-color: aquamarine;
+}
+.texto1{
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top: 20%;
+    font-size: 60px;
+    font-weight: 60px;
+}

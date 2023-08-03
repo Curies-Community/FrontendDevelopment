@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=Lobster&family=Pacifico&display=swap');
+
+.texto2{
+    font-family: 'Handjet';
+    font-weight: 70px;
+    text-align: center;
+    margin-top: 20%;
+    color: violet;
+}

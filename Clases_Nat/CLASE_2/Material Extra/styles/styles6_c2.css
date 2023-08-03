@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lumanosimo&family=Pacifico&display=swap');
+
+
+body{
+    background-image: linear-gradient(45deg, #f700ff, #00f2ff, yellow);
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 0;
+    background-attachment: fixed;
+}
+
+header{
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom, #ff5500, #FFA500); /* Crea un degradado desde arriba hacia abajo.*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra a la caja*/
+    padding: 20px; /**/
+    border-radius: 15px; /*Curva las esquinas de la caja.*/
+    border: 2px solid #FFA500 /*Agrega un borde a la caja.*/;
+    margin-top: 5%;
+}
+
+header h1{
+    text-align: center;
+    font-size: 30px;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h3{
+    text-align: center;
+    font-size: 20px;
+    color: yellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.p1{
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom, #007bff, #dd00ff); /* Crea un degradado desde arriba hacia abajo.*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra a la caja*/
+    padding: 20px; /**/
+    border-radius: 15px; /*Curva las esquinas de la caja.*/
+    border: 2px solid #FFA500 /*Agrega un borde a la caja.*/;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Lumanosimo', cursive;
+}
+
+.p2{
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom, #ff8282, #f579ee); /* Crea un degradado desde arriba hacia abajo.*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra a la caja*/
+    padding: 20px; /**/
+    border-radius: 15px; /*Curva las esquinas de la caja.*/
+    border: 2px solid #FFA500 /*Agrega un borde a la caja.*/;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Pacifico', cursive;;
+}
+
+.p3{
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom, #aee07c, #8c97f9); /* Crea un degradado desde arriba hacia abajo.*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra a la caja*/
+    padding: 20px; /**/
+    border-radius: 15px; /*Curva las esquinas de la caja.*/
+    border: 2px solid #FFA500 /*Agrega un borde a la caja.*/;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Alfa Slab One', cursive;
+}

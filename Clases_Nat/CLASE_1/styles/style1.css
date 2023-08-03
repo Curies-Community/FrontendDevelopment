@@ -1,0 +1,21 @@
+.texto{
+    margin-top: 9%;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown ;
+    text-align: center;
+    font-size: 40px;
+}
+
+.imagen1{
+    border: 9px solid green;
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+.image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

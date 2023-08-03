@@ -1,0 +1,8 @@
+.text-styling{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    color: violet;
+    text-transform: lowercase;
+}

@@ -1,0 +1,105 @@
+/*FUENTE DESCARGADA DE PAGINA Y AGREGADA POR MEDIO DE COMANDO FONT-FACE*/
+@font-face {
+    font-family: SuperMario256; /*Mandamos a llamar a la fuente con el nombre que la descargamos*/
+    src: url(../fuentes/SuperMario256.ttf); /*Seleccionamos el URL donde la fuente se encuentra, en este caso esta en la carpeta fuentes*/
+}
+
+body{
+    background-repeat: no-repeat; /*La imagen o colores solo se mostraran una vez sin repetirse.*/
+
+    /*Esta es una propiedad abreviada que combina varias propiedades de fondo en una sola. 
+    Está utilizando un degradado radial para el fondo. El degradado va desde un círculo central de color */
+    background: radial-gradient(circle,
+    rgba(238,174,202,1) 0%,
+    rgba(148,187,233,1) 100%); 
+
+    height: 100%; /*Esto establece la altura del cuerpo de la página o la ventana gráfica del navegador*/
+    padding: 0; /*Establece el relleno interno del cuerpo de la página*/
+    background-attachment: fixed; /*El fondo no se desplazará junto con el resto del contenido.*/
+}
+
+.texto6{
+    text-align: center;
+    font-family: SuperMario256;
+
+    /*Esta propiedad establece un degradado lineal como fondo. */
+    background: linear-gradient(90deg, 
+    rgba(131,58,180,1) 0%,
+    rgba(253,29,29,1) 50%,
+    rgba(252,176,69,1) 100%);
+    color: transparent; /*Esto establece el color de texto en transparente, dado que el fondo está configurado como un degradado.*/
+    background-clip: text; 
+    -webkit-background-clip: text;/*El degradado se mostrará solo dentro del área ocupada por el texto, creando el efecto de que el texto tiene un degradado de color.*/
+    background-attachment: fixed; /*establece que el fondo se mantendrá fijo en su posición mientras se desplaza el contenido de la página. */
+}
+article{
+    position: relative; /*el elemento se posicionará en relación con su posición normal en el flujo del documento.*/
+    width: 250px;
+    transition: all .3s ease;/*establece una transición suave */
+    margin: auto;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+/*Esto establece un conjunto de reglas CSS que se aplicarán a la primera 
+imagen (<img>) que sea un hijo directo del elemento <article>.*/
+article img:first-child{
+    box-shadow: 0 60px 60px -60px
+    rgba(0, 30, 255, 0.5);/*Esta propiedad crea una sombra alrededor de la imagen.*/
+    border-radius: 4px;
+    object-fit: cover; /*Esta propiedad controla cómo la imagen se ajusta dentro de su contenedor. cover indica que la imagen se escalará para cubrir completamente el contenedor,*/
+    width: 100%;
+}
+
+/*Esto establece un conjunto de reglas CSS que se aplicarán a la última 
+imagen (<img>) que sea un hijo directo del elemento <article>*/
+article img:last-child{
+    position: absolute; /*el elemento se posicionará en relación con su ancestro más cercano que tenga una posición no estática*/
+    width: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(25%); /*aplica una transformación en el eje vertical (Y) a la imagen*/
+    transition: .3s ease;
+    opacity: 0; /*Esto establece la opacidad de la imagen en 0, lo que la hace completamente transparente y no visible.*/
+}
+
+/*e utiliza para aplicar estilos a un elemento cuando el cursor del 
+ratón pasa por encima de ese elemento.*/
+article:hover{
+    transform: perspective(250px) /*se usa para crear una perspectiva en elementos tridimensionales*/
+    rotateX(10deg); /*rotar un elemento alrededor del eje X en un espacio tridimensional. */
+    transform: translateY(-5%)/*Movera el elemento en dirección vertical. */
+    translateZ(0); /*e utiliza para mover un elemento en la dirección del eje Z, lo que crea un efecto de profundidad en un espacio tridimensional. */
+
+}
+
+/*El pseudo-elemento ::before para crear un fondo semi-transparente que 
+se superpone a un elemento <article>. Esto puede usarse para agregar 
+un efecto de superposición con degradado y transparencia en 
+la parte inferior del elemento.*/
+article::before{
+    content: ''; /*Se utiliza para definir el contenido del pseudo-elemento ::before*/
+    position: absolute; /*coloca el pseudo-elemento fuera del flujo normal del documento y lo posiciona con respecto a su primer elemento padre que tenga una propiedad de posición establecida */
+    bottom: 0; /*Establece la distancia entre el borde inferior del pseudo-elemento y el borde inferior del contenedor principal */
+    height: 100%;
+    width: 100%; 
+    background-image: linear-gradient(to buttom, transparent 10%, rgba(0,0,0,0.5) 50%);
+    opacity: 0;
+    transform: all 0.3s ease;
+}
+
+/*Permite crear efectos visuales, como superposiciones o cambios de color, 
+que se activan cuando un usuario pasa el cursor sobre el artículo.*/
+article:hover::before{
+    opacity: 1; /*Establece la opacidad del pseudo-elemento ::before al valor completo, que es 1. Una opacidad de 1 significa que el elemento será completamente visible*/
+}
+
+/*ermite cambiar la apariencia de la última imagen cuando el usuario 
+pasa el cursor sobre el artículo, lo que puede ser útil para crear 
+efectos visuales específicos en ese momento.*/
+article:hover img:last-child{
+    opacity: 1;
+    transform: translateY(10%);
+}
