@@ -1,0 +1,25 @@
+.image-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  max-width: 80%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  img {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  img {
+    max-width: 80%;
+  }
+}

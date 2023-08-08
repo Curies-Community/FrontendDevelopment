@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #9f2a2a;
+}
+
+picture img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 600px) {
+    picture img {
+        content: url("../images/imagen2.png");
+    }
+}
+
+@media (min-width: 1080px) {
+    picture img {
+        content: url("../images/imagen3.png");
+    }
+}
+
+@media (min-width: 1500px) {
+    picture img {
+        content: url("../images/imagen4.png");
+    }
+}

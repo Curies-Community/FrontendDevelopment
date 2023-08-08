@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.caja {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    .caja {
+        background-color: blue;
+    }
+}
+
+@media(min-width: 1400px){
+    .caja {
+        background-color: blueviolet;
+    }
+}
+

@@ -1,0 +1,76 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-list li {
+    margin-right: 20px;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Burger menu styles */
+  .burger {
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Initially hidden on larger screens */
+  }
+  
+  .burger-toggle {
+    display: none;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .nav-list {
+      display: none; /* Hide the regular navigation */
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      padding: 10px;
+      z-index: 1; /* Ensure the menu appears above other content */
+    }
+  
+    .nav-list.active {
+      display: flex; /* Show the navigation as a flexbox on click of the burger icon */
+    }
+  
+    .burger {
+      display: block; /* Show the burger menu icon */
+    }
+  
+    .burger-toggle:checked ~ .nav-list {
+      display: flex; /* Show the navigation when the burger toggle is checked */
+    }
+  
+    .nav-list li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .nav-list li:last-child {
+      margin-bottom: 0;
+    }
+  }
+  

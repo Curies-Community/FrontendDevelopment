@@ -1,0 +1,22 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(229, 237, 7);
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  @media (max-width: 480px) {
+    .navigation {
+      justify-content: flex-start;
+    }
+    
+    .navigation ul {
+      flex-direction: column;
+    }
+  }
+  

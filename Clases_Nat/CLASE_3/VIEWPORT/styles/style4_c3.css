@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  .box {
+    padding: 20px;
+    background-color: rgb(216, 52, 52);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  } 

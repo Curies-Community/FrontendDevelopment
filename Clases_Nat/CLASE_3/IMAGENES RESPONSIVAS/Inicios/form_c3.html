@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="author" content="-tu nombre-">
+    <meta name="description" content="Portafolio de -tus datos-">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título -->
+    <title>Portafolio de Fulanito</title>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;500;800&family=Raleway:wght@400;700;900&display=swap">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/style3_c3.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="img/crop_logo.svg" alt="Logotipo del portafolio">
+        </a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="sobremi.html">Sobre mí</a>
+            <a href="proyectos.html">Proyectos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>¡Hablemos!</h1>
+        <p>Si te gusta mi trabajo, escríbeme.</p>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Formulario de contacto</legend>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Tu nombre completo" name="name" required>
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" placeholder="Tu número con lada (+249)">
+                <label for="email">Correo:</label>
+                <input type="email" id="email" placeholder="ejemplo@gmail.com" name="email">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" cols="30" rows="6" minlength="1" maxlength="250"></textarea>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <a href="url-del-sitio-correspondiente">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <!-- ...código del icono... -->
+            </svg>
+        </a>
+        <!-- ...otros iconos... -->
+        <p>Creado por (su nombre) 2023 ©</p>
+    </footer>
+</body>
+</html>

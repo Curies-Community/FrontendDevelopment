@@ -1,0 +1,34 @@
+body{
+    display: grid;
+    grid-template-columns: (repeat(12, 1fr));
+    grid-template-rows: repeat(10, 1fr);
+    font-weight: bolder;
+}
+
+@media screen and (max-width:480px) {
+    header{
+        grid-column: 1/-1;
+    }
+
+    nav{
+        grid-column: 1/-1;
+    }
+
+    section{
+        grid-column: 1/-1;
+        grid-row: 3/ span;
+    }
+
+    article{
+        grid-column: 1/-1;
+    }
+
+    aside{
+        grid-column: 1/-1;
+    }
+
+    footer{
+        grid-column: 1/-1;
+    }
+}
+    
